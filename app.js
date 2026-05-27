@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 method,
                 headers: {
                     'Authorization': `Bearer ${apiKey}`,
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'ngrok-skip-browser-warning': 'true'
                 }
             });
             const data = await response.json();
